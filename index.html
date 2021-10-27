@@ -15,30 +15,42 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <img class="ms-5" src="images/loupe.png" alt="">
-            <div class="navbar__menu d-flex justify-content-center align-items-center mx-auto">
-                <div class="navbar__menu-right">
-                    <ul class="navbar__menu-list-right d-flex justify-content-between mx-auto my-auto">
-                        <li class="navbar__menu-list-item me-5 text-uppercase">каталог</li>
-                        <li class="navbar__menu-list-item me-5 text-uppercase">оферта</li>
-                        <li class="navbar__menu-list-item me-5 text-uppercase">вакансии</li>
-                    </ul>
-                </div>
-                <div class="navbar__menu-logo me-5">
-                    <img src="images/logo.png" alt="">
-                </div>
-                <div class="navbar__menu-left">
-                    <ul class="navbar__menu-list-left d-flex justify-content-between mx-auto my-auto">
-                        <li class="navbar__menu-list-item me-5 text-uppercase">блог</li>
-                        <li class="navbar__menu-list-item me-5 text-uppercase">доставка</li>
-                        <li class="navbar__menu-list-item me-5 text-uppercase">контакты</li>
-                    </ul>
-                </div>
+
+            <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <a href="#" class="nav-link navbar__menu-logo--adaptiv mx-auto"><img src="images/logo.png" alt=""></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav navbar__menu d-flex justify-content-center align-items-center mx-auto text-center">
+
+                    <li class="nav-item navbar__menu-loup">
+                        <a href="#" class="nav-link"><img class="navbar__menu-loup-img" src="images/loupe.png" alt=""></a>
+                    </li>
+
+                    <li class="nav-item navbar__menu-list-item mx-auto text-uppercase"><a href="#" class="nav-link">каталог</a></li>
+                    <li class="nav-item navbar__menu-list-item mx-auto text-uppercase"><a href="#" class="nav-link">оферта</a></li>
+                    <li class="nav-item navbar__menu-list-item mx-auto text-uppercase"><a href="#" class="nav-link">вакансии</a></li>
+
+
+                    <li class="nav-item navbar__menu-logo mx-auto pe-5">
+                        <a href="#" class="nav-link nav-link-logo"><img src="images/logo.png" alt=""></a>
+                    </li>
+
+
+                    <li class="nav-item navbar__menu-list-item mx-auto text-uppercase"><a href="#" class="nav-link">блог</a></li>
+                    <li class="nav-item navbar__menu-list-item mx-auto text-uppercase"><a href="#" class="nav-link">доставка</a></li>
+                    <li class="nav-item navbar__menu-list-item mx-auto text-uppercase"><a href="#" class="nav-link">контакты</a></li>
+
+                </ul>
             </div>
-            <div class="navbar__img-wrapper d-flex justify-content-between">
-                <img class="navbar__img-bag" src="images/bag.png" alt="">
+            <div class="nav-item navbar__img-wrapper d-flex justify-content-between">
+                <div class="navbar__img-bag"><img class="navbar__img-bag" src="images/bag.png" alt=""></div>
                 <div href="#" class="navbar__img text-center">0</div>
             </div>
+
 
 
 
@@ -47,9 +59,9 @@
 
     <header class="header">
         <div class="container">
-
+            <div class="header__image"><img src="" alt="" class="header-img"></div>
             <div class="header__text d-flex align-items-center">
-                <div class="text-uppercase">инвесторам</div>
+                <p class="header__text-title text-uppercase">инвесторам</p>
             </div>
         </div>
     </header>
@@ -57,23 +69,28 @@
 
     <section class="feedback-form">
         <div class="container">
+
             <div class="text-center mx-auto">
                 <h1 class="feedback-form__title text-uppercase mx-auto">стань инвестором <span class="text-uppercase">qb</span> и зарабатывай пассивно на fashion рынке!</h1>
                 <p class="feedback-form__text mx-auto">a quick buck - бренд женской одежды, получивший вирусную популярность за счёт неординарного дизайна и смелого маркетинга</p>
             </div>
             <div class="reg-form-wrapper mx-auto">
-                <div class="reg-form" style="background-image: url('../images/form-1.png')">
+                <div class="reg-form">
                     <form action="">
 
                         <div class="reg-form__inputs">
                             <h5 class="reg-form__inputs-text text-uppercase">получите подробную презентацию для инвестора</h5>
-                            <div class="reg-form__inputs-wrapper d-flex justify-content-center mt-4 mb-3">
+                            <div class="reg-form__inputs-wrapper mt-4 mb-3">
                                 <div class="label-wrapper"> <label for="input-name" class="reg-form__inputs-label ps-3 pb-2">Имя*</label><input id="input-name" type="text" class="form-control form-control-1" placeholder="ИМЯ">
                                 </div>
                                 <div class="label-wrapper"> <label for="input-phone" class="reg-form__inputs-label ps-3 pb-2">Телефон</label><input id="input-phone" type="text" class="form-control form-control-1" placeholder="ТЕЛЕФОН"></div>
                             </div>
-                            <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
-                            <button type="submit" class="form-btn mt-4">получить</button>
+                            <div class="input-mail-wrapper">
+                                <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <button type="submit" class="form-btn mt-4">получить</button>
+                            </div>
                         </div>
 
                     </form>
@@ -85,6 +102,7 @@
 
     <section class="advantages">
         <div class="container">
+            <img src="images/advantages-img.png" alt="" class="advantages__img">
             <div class="advantages__items">
                 <div class="advantages__item">
                     <p class="advantages__item-title text-uppercase">6'000'000₽/мес.</p>
@@ -101,7 +119,7 @@
             </div>
 
             <h1 class="advantages__title text-uppercase text-center w-75">предыдущий опыт команды научил главному правилу:</h1>
-            <div class="advantages__text-wrapper text-center w-50 mx-auto">
+            <div class="advantages__text-wrapper text-center mx-auto">
                 <p class="advantages__text">"Хочешь идти быстро - иди один, хочешь идти далеко - идите вместе!"</p>
             </div>
         </div>
@@ -110,32 +128,34 @@
 
     <section class="feedback-form-2">
         <div class="container">
-            <div class="reg-form-wrapper mx-auto">
-                <div class="reg-form-2" style="background-image: url('../images/form-2.png')">
-                    <form action="">
 
+            <div class="reg-form-wrapper mx-auto">
+                <div class="reg-form-2">
+
+                    <form action="">
                         <div class="reg-form__inputs">
                             <h5 class="reg-form__inputs-text text-uppercase">получите подробную презентацию для инвестора</h5>
-                            <div class="reg-form__inputs-wrapper d-flex justify-content-center mt-4 mb-3">
+                            <div class="reg-form-2__inputs-wrapper d-flex justify-content-center mt-4 mb-3">
                                 <div class="label-wrapper"> <label for="input-name" class="reg-form__inputs-label ps-3 pb-2">Имя*</label><input id="input-name" type="text" class="form-control form-control-1" placeholder="ИМЯ">
                                 </div>
                                 <div class="label-wrapper"> <label for="input-phone" class="reg-form__inputs-label ps-3 pb-2">Телефон</label><input id="input-phone" type="text" class="form-control form-control-1" placeholder="ТЕЛЕФОН"></div>
                             </div>
-                            <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
-                            <button type="submit" class="form-btn mt-4">получить</button>
+                            <div class="input-mail-wrapper">
+                                <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <button type="submit" class="form-btn mt-4">получить</button>
+                            </div>
                         </div>
-
                     </form>
                 </div>
+
             </div>
-
-
-
         </div>
     </section>
 
     <section class="stat__info">
-        <div class="container d-flex justify-content-center">
+        <div class="container stat__info-wrapper">
             <div class="stat__info-text me-5">
                 <p class="stat__info-text-uppercase text-uppercase">1,7 ТРЛН ₽</p>
                 <p class="stat__info-about">объём российского fashion рынка в 2020 году* по данным FCG. При этом только 245 млрд ₽ приходится на онлайн продажи</p>
@@ -144,7 +164,7 @@
                 </p>
             </div>
             <div class="stat__info-img">
-                <img src="images/tape.png" alt="">
+                <img class="stat__info-image" src="images/tape.png" alt="">
             </div>
 
         </div>
@@ -153,21 +173,24 @@
 
     <section class="about">
         <div class="container">
-            <div class="about__items">
-                <div class="adout__item">
-                    <p class="about__title text-uppercase">шоурум qb это:</p>
-                </div>
-                <div class="adout__item">
-                    <p class="about__item-title">уютное</p>
-                    <p class="about__item-text">лофт-пространство с неповторимым интерьером</p>
-                </div>
-                <div class="adout__item">
-                    <p id="about__item-title-2" class="about__item-title">магазин</p>
-                    <p class="about__item-text">с отдельной входной группой, независимый от ТЦ</p>
-                </div>
-                <div class="adout__item">
-                    <p id="about__item-title-3" class="about__item-title">стиль работы</p>
-                    <p class="about__item-text">и обслуживания, направленный на комфорт клиента</p>
+            <div class="about__wrapper">
+                <img src="images/about-img.png" alt="" class="about__img">
+                <div class="about__items">
+                    <div class="adout__item">
+                        <p class="about__title text-uppercase">шоурум qb это:</p>
+                    </div>
+                    <div class="adout__item">
+                        <p class="about__item-title">уютное</p>
+                        <p class="about__item-text">лофт-пространство с неповторимым интерьером</p>
+                    </div>
+                    <div class="adout__item">
+                        <p id="about__item-title-2" class="about__item-title">магазин</p>
+                        <p class="about__item-text">с отдельной входной группой, независимый от ТЦ</p>
+                    </div>
+                    <div class="adout__item">
+                        <p id="about__item-title-3" class="about__item-title">стиль работы</p>
+                        <p class="about__item-text">и обслуживания, направленный на комфорт клиента</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,8 +210,12 @@
                                 </div>
                                 <div class="label-wrapper"> <label for="input-phone" class="reg-form__inputs-label ps-3 pb-2">Телефон</label><input id="input-phone" type="text" class="form-control form-control-1" placeholder="ТЕЛЕФОН"></div>
                             </div>
-                            <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
-                            <button type="submit" class="form-btn mt-4">получить</button>
+                            <div class="input-mail-wrapper">
+                                <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <button type="submit" class="form-btn mt-4">получить</button>
+                            </div>
                         </div>
 
                     </form>
@@ -202,12 +229,12 @@
 
     <section class="about-brand">
 
-        <div class="about-brand__wrapper container d-flex justify-content-between">
+        <div class="about-brand__wrapper container">
 
             <div class="about-brand__text">
-                <h1 class="about-brand__text-text-uppercase text-uppercase">сми о бренде <br> и анастасии аникиной:</h1>
+                <p class="about-brand__text-text-uppercase text-uppercase">сми о бренде <br> и анастасии аникиной:</p>
                 <a href="#" class="about-brand__text-info">journal.podrygka.ru</a>
-                <div class="d-flex">
+                <div class="arrows">
                     <button class="arrow arrow-left" style="transform: rotate(180deg);"><img src="images/arrow.png" alt=""></button>
                     <button class="arrow arrow-right"><img src="images/arrow.png" alt=""></button>
                 </div>
@@ -222,6 +249,7 @@
 
     <section class="look-for-invest">
         <div class="container look-for-invest__wrapper mx-auto text-center">
+            <img src="images/girl-1.png" alt="" class="look-for-invest__img">
             <p class="look-for-invest__title text-uppercase">Мы ищем партнера-инвестора</p>
             <p class="look-for-invest__text mx-auto">для совместного развития одного локального магазина или нескольких магазиновна территории РФ</p>
         </div>
@@ -230,16 +258,15 @@
     <section class="about-team">
         <div class="container">
             <p class="about-team__title text-uppercase text-center mx-auto">Команда qb это: </p>
-            <div class="about-team__items mx-auto">
+            <div class="about-team__items row mx-auto">
                 <div class="row mb-4">
-                    <p class="about-team__item col ps-5"><span>30 человек</span> команда бэк офиса: производство, маркетинг, юристы и бухгалтера</p>
-                    <p class="about-team__item col ps-5"><span>5 лет</span> в сфере fashion рынка в России и за пределами</p>
-                    <p class="about-team__item col ps-5">Работа <span>со СМИ</span> и постоянный PR проектов</p>
-                </div>
-                <div class="row">
-                    <p class="about-team__item col ps-5"><span>55 франшиз</span> бренда AnikinA в 15 странах на сентябрь 2021 года</p>
-                    <p class="about-team__item col ps-5">Участие в <span>fashion мероприятиях</span> и показах</p>
-                    <p class="about-team__item col ps-5"><span>ТОП блогеры</span> и селебрити в одежде qb</p>
+                    <p class="about-team__item col-4 ps-5"><span>30 человек</span> команда бэк офиса: производство, маркетинг, юристы и бухгалтера</p>
+                    <p class="about-team__item col-4 ps-5"><span>5 лет</span> в сфере fashion рынка в России и за пределами</p>
+                    <p class="about-team__item col-4 ps-5">Работа <span>со СМИ</span> и постоянный PR проектов</p>
+
+                    <p class="about-team__item col-4 ps-5"><span>55 франшиз</span> бренда AnikinA в 15 странах на сентябрь 2021 года</p>
+                    <p class="about-team__item col-4 ps-5">Участие в <span>fashion мероприятиях</span> и показах</p>
+                    <p class="about-team__item col-4 ps-5"><span>ТОП блогеры</span> и селебрити в одежде qb</p>
                 </div>
             </div>
         </div>
@@ -258,8 +285,12 @@
                                 </div>
                                 <div class="label-wrapper"> <label for="input-phone" class="reg-form__inputs-label ps-3 pb-2">Телефон</label><input id="input-phone" type="text" class="form-control form-control-1" placeholder="ТЕЛЕФОН"></div>
                             </div>
-                            <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
-                            <button type="submit" class="form-btn mt-4">получить</button>
+                            <div class="input-mail-wrapper">
+                                <label for="input-mail" class="reg-form__inputs-label ps-3 pb-2">Email*</label><input id="input-mail" type="text" class="form-control form-control-1-mail" placeholder="EMAIL">
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <button type="submit" class="form-btn mt-4">получить</button>
+                            </div>
                         </div>
 
                     </form>
